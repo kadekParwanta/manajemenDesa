@@ -43,5 +43,9 @@
   "Jabatan": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "APBDes": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
