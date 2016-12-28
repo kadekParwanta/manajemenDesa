@@ -47,5 +47,9 @@
   "APBDes": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "JadwalKegiatan": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
