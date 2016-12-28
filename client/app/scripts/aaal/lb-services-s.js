@@ -1360,111 +1360,111 @@ module.factory(
   "Desa",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/desa/:id",
+      urlBase + "/Desa/:id",
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use Desa.organisasiDesa.findById() instead.
-        "prototype$__findById__organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.findById() instead.
+        "prototype$__findById__OrganisasiDesa": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiDesa/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiDesa/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.destroyById() instead.
-        "prototype$__destroyById__organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.destroyById() instead.
+        "prototype$__destroyById__OrganisasiDesa": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiDesa/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiDesa/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.updateById() instead.
-        "prototype$__updateById__organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.updateById() instead.
+        "prototype$__updateById__OrganisasiDesa": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiDesa/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiDesa/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.findById() instead.
-        "prototype$__findById__organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.findById() instead.
+        "prototype$__findById__OrganisasiMasyarakat": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiMasyarakat/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.destroyById() instead.
-        "prototype$__destroyById__organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.destroyById() instead.
+        "prototype$__destroyById__OrganisasiMasyarakat": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiMasyarakat/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.updateById() instead.
-        "prototype$__updateById__organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.updateById() instead.
+        "prototype$__updateById__OrganisasiMasyarakat": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiMasyarakat/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa() instead.
-        "prototype$__get__organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa() instead.
+        "prototype$__get__OrganisasiDesa": {
           isArray: true,
-          url: urlBase + "/desa/:id/organisasiDesa",
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.create() instead.
-        "prototype$__create__organisasiDesa": {
-          url: urlBase + "/desa/:id/organisasiDesa",
+        // INTERNAL. Use Desa.OrganisasiDesa.create() instead.
+        "prototype$__create__OrganisasiDesa": {
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.destroyAll() instead.
-        "prototype$__delete__organisasiDesa": {
-          url: urlBase + "/desa/:id/organisasiDesa",
+        // INTERNAL. Use Desa.OrganisasiDesa.destroyAll() instead.
+        "prototype$__delete__OrganisasiDesa": {
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.count() instead.
-        "prototype$__count__organisasiDesa": {
-          url: urlBase + "/desa/:id/organisasiDesa/count",
+        // INTERNAL. Use Desa.OrganisasiDesa.count() instead.
+        "prototype$__count__OrganisasiDesa": {
+          url: urlBase + "/Desa/:id/OrganisasiDesa/count",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat() instead.
-        "prototype$__get__organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat() instead.
+        "prototype$__get__OrganisasiMasyarakat": {
           isArray: true,
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.create() instead.
-        "prototype$__create__organisasiMasyarakat": {
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.create() instead.
+        "prototype$__create__OrganisasiMasyarakat": {
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.destroyAll() instead.
-        "prototype$__delete__organisasiMasyarakat": {
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.destroyAll() instead.
+        "prototype$__delete__OrganisasiMasyarakat": {
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.count() instead.
-        "prototype$__count__organisasiMasyarakat": {
-          url: urlBase + "/desa/:id/organisasiMasyarakat/count",
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.count() instead.
+        "prototype$__count__OrganisasiMasyarakat": {
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/count",
           method: "GET"
         },
 
@@ -1502,7 +1502,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/desa",
+          url: urlBase + "/Desa",
           method: "POST"
         },
 
@@ -1541,7 +1541,7 @@ module.factory(
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/desa",
+          url: urlBase + "/Desa",
           method: "POST"
         },
 
@@ -1579,7 +1579,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/desa",
+          url: urlBase + "/Desa",
           method: "PUT"
         },
 
@@ -1617,7 +1617,7 @@ module.factory(
          * </em>
          */
         "replaceOrCreate": {
-          url: urlBase + "/desa/replaceOrCreate",
+          url: urlBase + "/Desa/replaceOrCreate",
           method: "POST"
         },
 
@@ -1654,7 +1654,7 @@ module.factory(
          * </em>
          */
         "upsertWithWhere": {
-          url: urlBase + "/desa/upsertWithWhere",
+          url: urlBase + "/Desa/upsertWithWhere",
           method: "POST"
         },
 
@@ -1686,7 +1686,7 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/desa/:id/exists",
+          url: urlBase + "/Desa/:id/exists",
           method: "GET"
         },
 
@@ -1721,7 +1721,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/desa/:id",
+          url: urlBase + "/Desa/:id",
           method: "GET"
         },
 
@@ -1758,7 +1758,7 @@ module.factory(
          * </em>
          */
         "replaceById": {
-          url: urlBase + "/desa/:id/replace",
+          url: urlBase + "/Desa/:id/replace",
           method: "POST"
         },
 
@@ -1792,7 +1792,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/desa",
+          url: urlBase + "/Desa",
           method: "GET"
         },
 
@@ -1825,7 +1825,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/desa/findOne",
+          url: urlBase + "/Desa/findOne",
           method: "GET"
         },
 
@@ -1859,7 +1859,7 @@ module.factory(
          * Information related to the outcome of the operation
          */
         "updateAll": {
-          url: urlBase + "/desa/update",
+          url: urlBase + "/Desa/update",
           method: "POST"
         },
 
@@ -1892,7 +1892,7 @@ module.factory(
          * </em>
          */
         "deleteById": {
-          url: urlBase + "/desa/:id",
+          url: urlBase + "/Desa/:id",
           method: "DELETE"
         },
 
@@ -1924,7 +1924,7 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/desa/count",
+          url: urlBase + "/Desa/count",
           method: "GET"
         },
 
@@ -1961,7 +1961,7 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/desa/:id",
+          url: urlBase + "/Desa/:id",
           method: "PUT"
         },
 
@@ -1998,7 +1998,7 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/desa/change-stream",
+          url: urlBase + "/Desa/change-stream",
           method: "POST"
         },
       }
@@ -2248,27 +2248,27 @@ module.factory(
 
     /**
      * @ngdoc object
-     * @name lbServices.Desa.organisasiDesa
-     * @header lbServices.Desa.organisasiDesa
+     * @name lbServices.Desa.OrganisasiDesa
+     * @header lbServices.Desa.OrganisasiDesa
      * @object
      * @description
      *
-     * The object `Desa.organisasiDesa` groups methods
+     * The object `Desa.OrganisasiDesa` groups methods
      * manipulating `Organisasi` instances related to `Desa`.
      *
-     * Call {@link lbServices.Desa#organisasiDesa Desa.organisasiDesa()}
+     * Call {@link lbServices.Desa#OrganisasiDesa Desa.OrganisasiDesa()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa#organisasiDesa
+         * @name lbServices.Desa#OrganisasiDesa
          * @methodOf lbServices.Desa
          *
          * @description
          *
-         * Queries organisasiDesa of desa.
+         * Queries OrganisasiDesa of Desa.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2291,20 +2291,20 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiDesa = function() {
+        R.OrganisasiDesa = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::get::desa::organisasiDesa"];
+          var action = TargetResource["::get::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#count
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#count
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Counts organisasiDesa of desa.
+         * Counts OrganisasiDesa of Desa.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2326,20 +2326,20 @@ module.factory(
          *
          *  - `count` – `{number=}` - 
          */
-        R.organisasiDesa.count = function() {
+        R.OrganisasiDesa.count = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::count::desa::organisasiDesa"];
+          var action = TargetResource["::count::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#create
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#create
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Creates a new instance in organisasiDesa of this model.
+         * Creates a new instance in OrganisasiDesa of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2364,20 +2364,20 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiDesa.create = function() {
+        R.OrganisasiDesa.create = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::create::desa::organisasiDesa"];
+          var action = TargetResource["::create::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#createMany
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#createMany
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Creates a new instance in organisasiDesa of this model.
+         * Creates a new instance in OrganisasiDesa of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2402,20 +2402,20 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiDesa.createMany = function() {
+        R.OrganisasiDesa.createMany = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::createMany::desa::organisasiDesa"];
+          var action = TargetResource["::createMany::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#destroyAll
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#destroyAll
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Deletes all organisasiDesa of this model.
+         * Deletes all OrganisasiDesa of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2433,26 +2433,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.organisasiDesa.destroyAll = function() {
+        R.OrganisasiDesa.destroyAll = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::delete::desa::organisasiDesa"];
+          var action = TargetResource["::delete::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#destroyById
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#destroyById
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Delete a related item by id for organisasiDesa.
+         * Delete a related item by id for OrganisasiDesa.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for organisasiDesa
+         *  - `fk` – `{*}` - Foreign key for OrganisasiDesa
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2466,26 +2466,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.organisasiDesa.destroyById = function() {
+        R.OrganisasiDesa.destroyById = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::destroyById::desa::organisasiDesa"];
+          var action = TargetResource["::destroyById::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#findById
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#findById
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Find a related item by id for organisasiDesa.
+         * Find a related item by id for OrganisasiDesa.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for organisasiDesa
+         *  - `fk` – `{*}` - Foreign key for OrganisasiDesa
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2502,26 +2502,26 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiDesa.findById = function() {
+        R.OrganisasiDesa.findById = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::findById::desa::organisasiDesa"];
+          var action = TargetResource["::findById::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiDesa#updateById
-         * @methodOf lbServices.Desa.organisasiDesa
+         * @name lbServices.Desa.OrganisasiDesa#updateById
+         * @methodOf lbServices.Desa.OrganisasiDesa
          *
          * @description
          *
-         * Update a related item by id for organisasiDesa.
+         * Update a related item by id for OrganisasiDesa.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for organisasiDesa
+         *  - `fk` – `{*}` - Foreign key for OrganisasiDesa
          *
          * @param {Object} postData Request data.
          *
@@ -2542,34 +2542,34 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiDesa.updateById = function() {
+        R.OrganisasiDesa.updateById = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::updateById::desa::organisasiDesa"];
+          var action = TargetResource["::updateById::Desa::OrganisasiDesa"];
           return action.apply(R, arguments);
         };
     /**
      * @ngdoc object
-     * @name lbServices.Desa.organisasiMasyarakat
-     * @header lbServices.Desa.organisasiMasyarakat
+     * @name lbServices.Desa.OrganisasiMasyarakat
+     * @header lbServices.Desa.OrganisasiMasyarakat
      * @object
      * @description
      *
-     * The object `Desa.organisasiMasyarakat` groups methods
+     * The object `Desa.OrganisasiMasyarakat` groups methods
      * manipulating `Organisasi` instances related to `Desa`.
      *
-     * Call {@link lbServices.Desa#organisasiMasyarakat Desa.organisasiMasyarakat()}
+     * Call {@link lbServices.Desa#OrganisasiMasyarakat Desa.OrganisasiMasyarakat()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa#organisasiMasyarakat
+         * @name lbServices.Desa#OrganisasiMasyarakat
          * @methodOf lbServices.Desa
          *
          * @description
          *
-         * Queries organisasiMasyarakat of desa.
+         * Queries OrganisasiMasyarakat of Desa.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2592,20 +2592,20 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiMasyarakat = function() {
+        R.OrganisasiMasyarakat = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::get::desa::organisasiMasyarakat"];
+          var action = TargetResource["::get::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#count
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#count
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Counts organisasiMasyarakat of desa.
+         * Counts OrganisasiMasyarakat of Desa.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2627,20 +2627,20 @@ module.factory(
          *
          *  - `count` – `{number=}` - 
          */
-        R.organisasiMasyarakat.count = function() {
+        R.OrganisasiMasyarakat.count = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::count::desa::organisasiMasyarakat"];
+          var action = TargetResource["::count::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#create
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#create
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Creates a new instance in organisasiMasyarakat of this model.
+         * Creates a new instance in OrganisasiMasyarakat of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2665,20 +2665,20 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiMasyarakat.create = function() {
+        R.OrganisasiMasyarakat.create = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::create::desa::organisasiMasyarakat"];
+          var action = TargetResource["::create::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#createMany
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#createMany
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Creates a new instance in organisasiMasyarakat of this model.
+         * Creates a new instance in OrganisasiMasyarakat of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2703,20 +2703,20 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiMasyarakat.createMany = function() {
+        R.OrganisasiMasyarakat.createMany = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::createMany::desa::organisasiMasyarakat"];
+          var action = TargetResource["::createMany::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#destroyAll
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#destroyAll
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Deletes all organisasiMasyarakat of this model.
+         * Deletes all OrganisasiMasyarakat of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -2734,26 +2734,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.organisasiMasyarakat.destroyAll = function() {
+        R.OrganisasiMasyarakat.destroyAll = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::delete::desa::organisasiMasyarakat"];
+          var action = TargetResource["::delete::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#destroyById
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#destroyById
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Delete a related item by id for organisasiMasyarakat.
+         * Delete a related item by id for OrganisasiMasyarakat.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for organisasiMasyarakat
+         *  - `fk` – `{*}` - Foreign key for OrganisasiMasyarakat
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2767,26 +2767,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.organisasiMasyarakat.destroyById = function() {
+        R.OrganisasiMasyarakat.destroyById = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::destroyById::desa::organisasiMasyarakat"];
+          var action = TargetResource["::destroyById::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#findById
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#findById
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Find a related item by id for organisasiMasyarakat.
+         * Find a related item by id for OrganisasiMasyarakat.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for organisasiMasyarakat
+         *  - `fk` – `{*}` - Foreign key for OrganisasiMasyarakat
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -2803,26 +2803,26 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiMasyarakat.findById = function() {
+        R.OrganisasiMasyarakat.findById = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::findById::desa::organisasiMasyarakat"];
+          var action = TargetResource["::findById::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Desa.organisasiMasyarakat#updateById
-         * @methodOf lbServices.Desa.organisasiMasyarakat
+         * @name lbServices.Desa.OrganisasiMasyarakat#updateById
+         * @methodOf lbServices.Desa.OrganisasiMasyarakat
          *
          * @description
          *
-         * Update a related item by id for organisasiMasyarakat.
+         * Update a related item by id for OrganisasiMasyarakat.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for organisasiMasyarakat
+         *  - `fk` – `{*}` - Foreign key for OrganisasiMasyarakat
          *
          * @param {Object} postData Request data.
          *
@@ -2843,9 +2843,9 @@ module.factory(
          * This usually means the response is a `Organisasi` object.)
          * </em>
          */
-        R.organisasiMasyarakat.updateById = function() {
+        R.OrganisasiMasyarakat.updateById = function() {
           var TargetResource = $injector.get("Organisasi");
-          var action = TargetResource["::updateById::desa::organisasiMasyarakat"];
+          var action = TargetResource["::updateById::Desa::OrganisasiMasyarakat"];
           return action.apply(R, arguments);
         };
 
@@ -2873,59 +2873,59 @@ module.factory(
   "Organisasi",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/organisasi/:id",
+      urlBase + "/Organisasi/:id",
       { 'id': '@id' },
       {
 
-        // INTERNAL. Use Organisasi.jabatan.findById() instead.
-        "prototype$__findById__jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.findById() instead.
+        "prototype$__findById__Jabatan": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/organisasi/:id/jabatan/:fk",
+          url: urlBase + "/Organisasi/:id/Jabatan/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.destroyById() instead.
-        "prototype$__destroyById__jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.destroyById() instead.
+        "prototype$__destroyById__Jabatan": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/organisasi/:id/jabatan/:fk",
+          url: urlBase + "/Organisasi/:id/Jabatan/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.updateById() instead.
-        "prototype$__updateById__jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.updateById() instead.
+        "prototype$__updateById__Jabatan": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/organisasi/:id/jabatan/:fk",
+          url: urlBase + "/Organisasi/:id/Jabatan/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Organisasi.jabatan() instead.
-        "prototype$__get__jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan() instead.
+        "prototype$__get__Jabatan": {
           isArray: true,
-          url: urlBase + "/organisasi/:id/jabatan",
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "GET"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.create() instead.
-        "prototype$__create__jabatan": {
-          url: urlBase + "/organisasi/:id/jabatan",
+        // INTERNAL. Use Organisasi.Jabatan.create() instead.
+        "prototype$__create__Jabatan": {
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "POST"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.destroyAll() instead.
-        "prototype$__delete__jabatan": {
-          url: urlBase + "/organisasi/:id/jabatan",
+        // INTERNAL. Use Organisasi.Jabatan.destroyAll() instead.
+        "prototype$__delete__Jabatan": {
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.count() instead.
-        "prototype$__count__jabatan": {
-          url: urlBase + "/organisasi/:id/jabatan/count",
+        // INTERNAL. Use Organisasi.Jabatan.count() instead.
+        "prototype$__count__Jabatan": {
+          url: urlBase + "/Organisasi/:id/Jabatan/count",
           method: "GET"
         },
 
@@ -2963,7 +2963,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/organisasi",
+          url: urlBase + "/Organisasi",
           method: "POST"
         },
 
@@ -3002,7 +3002,7 @@ module.factory(
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/organisasi",
+          url: urlBase + "/Organisasi",
           method: "POST"
         },
 
@@ -3040,7 +3040,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/organisasi",
+          url: urlBase + "/Organisasi",
           method: "PUT"
         },
 
@@ -3078,7 +3078,7 @@ module.factory(
          * </em>
          */
         "replaceOrCreate": {
-          url: urlBase + "/organisasi/replaceOrCreate",
+          url: urlBase + "/Organisasi/replaceOrCreate",
           method: "POST"
         },
 
@@ -3115,7 +3115,7 @@ module.factory(
          * </em>
          */
         "upsertWithWhere": {
-          url: urlBase + "/organisasi/upsertWithWhere",
+          url: urlBase + "/Organisasi/upsertWithWhere",
           method: "POST"
         },
 
@@ -3147,7 +3147,7 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/organisasi/:id/exists",
+          url: urlBase + "/Organisasi/:id/exists",
           method: "GET"
         },
 
@@ -3182,7 +3182,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/organisasi/:id",
+          url: urlBase + "/Organisasi/:id",
           method: "GET"
         },
 
@@ -3219,7 +3219,7 @@ module.factory(
          * </em>
          */
         "replaceById": {
-          url: urlBase + "/organisasi/:id/replace",
+          url: urlBase + "/Organisasi/:id/replace",
           method: "POST"
         },
 
@@ -3253,7 +3253,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/organisasi",
+          url: urlBase + "/Organisasi",
           method: "GET"
         },
 
@@ -3286,7 +3286,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/organisasi/findOne",
+          url: urlBase + "/Organisasi/findOne",
           method: "GET"
         },
 
@@ -3320,7 +3320,7 @@ module.factory(
          * Information related to the outcome of the operation
          */
         "updateAll": {
-          url: urlBase + "/organisasi/update",
+          url: urlBase + "/Organisasi/update",
           method: "POST"
         },
 
@@ -3353,7 +3353,7 @@ module.factory(
          * </em>
          */
         "deleteById": {
-          url: urlBase + "/organisasi/:id",
+          url: urlBase + "/Organisasi/:id",
           method: "DELETE"
         },
 
@@ -3385,7 +3385,7 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/organisasi/count",
+          url: urlBase + "/Organisasi/count",
           method: "GET"
         },
 
@@ -3422,7 +3422,7 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/organisasi/:id",
+          url: urlBase + "/Organisasi/:id",
           method: "PUT"
         },
 
@@ -3459,125 +3459,125 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/organisasi/change-stream",
+          url: urlBase + "/Organisasi/change-stream",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.findById() instead.
-        "::findById::desa::organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.findById() instead.
+        "::findById::Desa::OrganisasiDesa": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiDesa/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiDesa/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.destroyById() instead.
-        "::destroyById::desa::organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.destroyById() instead.
+        "::destroyById::Desa::OrganisasiDesa": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiDesa/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiDesa/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.updateById() instead.
-        "::updateById::desa::organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.updateById() instead.
+        "::updateById::Desa::OrganisasiDesa": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiDesa/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiDesa/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.findById() instead.
-        "::findById::desa::organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.findById() instead.
+        "::findById::Desa::OrganisasiMasyarakat": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiMasyarakat/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.destroyById() instead.
-        "::destroyById::desa::organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.destroyById() instead.
+        "::destroyById::Desa::OrganisasiMasyarakat": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiMasyarakat/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.updateById() instead.
-        "::updateById::desa::organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.updateById() instead.
+        "::updateById::Desa::OrganisasiMasyarakat": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/desa/:id/organisasiMasyarakat/:fk",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa() instead.
-        "::get::desa::organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa() instead.
+        "::get::Desa::OrganisasiDesa": {
           isArray: true,
-          url: urlBase + "/desa/:id/organisasiDesa",
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.create() instead.
-        "::create::desa::organisasiDesa": {
-          url: urlBase + "/desa/:id/organisasiDesa",
+        // INTERNAL. Use Desa.OrganisasiDesa.create() instead.
+        "::create::Desa::OrganisasiDesa": {
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.createMany() instead.
-        "::createMany::desa::organisasiDesa": {
+        // INTERNAL. Use Desa.OrganisasiDesa.createMany() instead.
+        "::createMany::Desa::OrganisasiDesa": {
           isArray: true,
-          url: urlBase + "/desa/:id/organisasiDesa",
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.destroyAll() instead.
-        "::delete::desa::organisasiDesa": {
-          url: urlBase + "/desa/:id/organisasiDesa",
+        // INTERNAL. Use Desa.OrganisasiDesa.destroyAll() instead.
+        "::delete::Desa::OrganisasiDesa": {
+          url: urlBase + "/Desa/:id/OrganisasiDesa",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiDesa.count() instead.
-        "::count::desa::organisasiDesa": {
-          url: urlBase + "/desa/:id/organisasiDesa/count",
+        // INTERNAL. Use Desa.OrganisasiDesa.count() instead.
+        "::count::Desa::OrganisasiDesa": {
+          url: urlBase + "/Desa/:id/OrganisasiDesa/count",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat() instead.
-        "::get::desa::organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat() instead.
+        "::get::Desa::OrganisasiMasyarakat": {
           isArray: true,
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "GET"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.create() instead.
-        "::create::desa::organisasiMasyarakat": {
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.create() instead.
+        "::create::Desa::OrganisasiMasyarakat": {
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.createMany() instead.
-        "::createMany::desa::organisasiMasyarakat": {
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.createMany() instead.
+        "::createMany::Desa::OrganisasiMasyarakat": {
           isArray: true,
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "POST"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.destroyAll() instead.
-        "::delete::desa::organisasiMasyarakat": {
-          url: urlBase + "/desa/:id/organisasiMasyarakat",
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.destroyAll() instead.
+        "::delete::Desa::OrganisasiMasyarakat": {
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Desa.organisasiMasyarakat.count() instead.
-        "::count::desa::organisasiMasyarakat": {
-          url: urlBase + "/desa/:id/organisasiMasyarakat/count",
+        // INTERNAL. Use Desa.OrganisasiMasyarakat.count() instead.
+        "::count::Desa::OrganisasiMasyarakat": {
+          url: urlBase + "/Desa/:id/OrganisasiMasyarakat/count",
           method: "GET"
         },
       }
@@ -3827,27 +3827,27 @@ module.factory(
 
     /**
      * @ngdoc object
-     * @name lbServices.Organisasi.jabatan
-     * @header lbServices.Organisasi.jabatan
+     * @name lbServices.Organisasi.Jabatan
+     * @header lbServices.Organisasi.Jabatan
      * @object
      * @description
      *
-     * The object `Organisasi.jabatan` groups methods
+     * The object `Organisasi.Jabatan` groups methods
      * manipulating `Jabatan` instances related to `Organisasi`.
      *
-     * Call {@link lbServices.Organisasi#jabatan Organisasi.jabatan()}
+     * Call {@link lbServices.Organisasi#Jabatan Organisasi.Jabatan()}
      * to query all related instances.
      */
 
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi#jabatan
+         * @name lbServices.Organisasi#Jabatan
          * @methodOf lbServices.Organisasi
          *
          * @description
          *
-         * Queries jabatan of organisasi.
+         * Queries Jabatan of Organisasi.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3870,20 +3870,20 @@ module.factory(
          * This usually means the response is a `Jabatan` object.)
          * </em>
          */
-        R.jabatan = function() {
+        R.Jabatan = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::get::organisasi::jabatan"];
+          var action = TargetResource["::get::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#count
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#count
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Counts jabatan of organisasi.
+         * Counts Jabatan of Organisasi.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3905,20 +3905,20 @@ module.factory(
          *
          *  - `count` – `{number=}` - 
          */
-        R.jabatan.count = function() {
+        R.Jabatan.count = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::count::organisasi::jabatan"];
+          var action = TargetResource["::count::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#create
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#create
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Creates a new instance in jabatan of this model.
+         * Creates a new instance in Jabatan of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3943,20 +3943,20 @@ module.factory(
          * This usually means the response is a `Jabatan` object.)
          * </em>
          */
-        R.jabatan.create = function() {
+        R.Jabatan.create = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::create::organisasi::jabatan"];
+          var action = TargetResource["::create::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#createMany
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#createMany
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Creates a new instance in jabatan of this model.
+         * Creates a new instance in Jabatan of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -3981,20 +3981,20 @@ module.factory(
          * This usually means the response is a `Jabatan` object.)
          * </em>
          */
-        R.jabatan.createMany = function() {
+        R.Jabatan.createMany = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::createMany::organisasi::jabatan"];
+          var action = TargetResource["::createMany::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#destroyAll
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#destroyAll
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Deletes all jabatan of this model.
+         * Deletes all Jabatan of this model.
          *
          * @param {Object=} parameters Request parameters.
          *
@@ -4012,26 +4012,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.jabatan.destroyAll = function() {
+        R.Jabatan.destroyAll = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::delete::organisasi::jabatan"];
+          var action = TargetResource["::delete::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#destroyById
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#destroyById
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Delete a related item by id for jabatan.
+         * Delete a related item by id for Jabatan.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for jabatan
+         *  - `fk` – `{*}` - Foreign key for Jabatan
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -4045,26 +4045,26 @@ module.factory(
          *
          * This method returns no data.
          */
-        R.jabatan.destroyById = function() {
+        R.Jabatan.destroyById = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::destroyById::organisasi::jabatan"];
+          var action = TargetResource["::destroyById::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#findById
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#findById
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Find a related item by id for jabatan.
+         * Find a related item by id for Jabatan.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for jabatan
+         *  - `fk` – `{*}` - Foreign key for Jabatan
          *
          * @param {function(Object,Object)=} successCb
          *   Success callback with two arguments: `value`, `responseHeaders`.
@@ -4081,26 +4081,26 @@ module.factory(
          * This usually means the response is a `Jabatan` object.)
          * </em>
          */
-        R.jabatan.findById = function() {
+        R.Jabatan.findById = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::findById::organisasi::jabatan"];
+          var action = TargetResource["::findById::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
         /**
          * @ngdoc method
-         * @name lbServices.Organisasi.jabatan#updateById
-         * @methodOf lbServices.Organisasi.jabatan
+         * @name lbServices.Organisasi.Jabatan#updateById
+         * @methodOf lbServices.Organisasi.Jabatan
          *
          * @description
          *
-         * Update a related item by id for jabatan.
+         * Update a related item by id for Jabatan.
          *
          * @param {Object=} parameters Request parameters.
          *
          *  - `id` – `{*}` - PersistedModel id
          *
-         *  - `fk` – `{*}` - Foreign key for jabatan
+         *  - `fk` – `{*}` - Foreign key for Jabatan
          *
          * @param {Object} postData Request data.
          *
@@ -4121,9 +4121,9 @@ module.factory(
          * This usually means the response is a `Jabatan` object.)
          * </em>
          */
-        R.jabatan.updateById = function() {
+        R.Jabatan.updateById = function() {
           var TargetResource = $injector.get("Jabatan");
-          var action = TargetResource["::updateById::organisasi::jabatan"];
+          var action = TargetResource["::updateById::Organisasi::Jabatan"];
           return action.apply(R, arguments);
         };
 
@@ -4151,7 +4151,7 @@ module.factory(
   "Jabatan",
   ['LoopBackResource', 'LoopBackAuth', '$injector', function(Resource, LoopBackAuth, $injector) {
     var R = Resource(
-      urlBase + "/jabatan/:id",
+      urlBase + "/Jabatan/:id",
       { 'id': '@id' },
       {
 
@@ -4189,7 +4189,7 @@ module.factory(
          * </em>
          */
         "create": {
-          url: urlBase + "/jabatan",
+          url: urlBase + "/Jabatan",
           method: "POST"
         },
 
@@ -4228,7 +4228,7 @@ module.factory(
          */
         "createMany": {
           isArray: true,
-          url: urlBase + "/jabatan",
+          url: urlBase + "/Jabatan",
           method: "POST"
         },
 
@@ -4266,7 +4266,7 @@ module.factory(
          * </em>
          */
         "upsert": {
-          url: urlBase + "/jabatan",
+          url: urlBase + "/Jabatan",
           method: "PUT"
         },
 
@@ -4304,7 +4304,7 @@ module.factory(
          * </em>
          */
         "replaceOrCreate": {
-          url: urlBase + "/jabatan/replaceOrCreate",
+          url: urlBase + "/Jabatan/replaceOrCreate",
           method: "POST"
         },
 
@@ -4341,7 +4341,7 @@ module.factory(
          * </em>
          */
         "upsertWithWhere": {
-          url: urlBase + "/jabatan/upsertWithWhere",
+          url: urlBase + "/Jabatan/upsertWithWhere",
           method: "POST"
         },
 
@@ -4373,7 +4373,7 @@ module.factory(
          *  - `exists` – `{boolean=}` - 
          */
         "exists": {
-          url: urlBase + "/jabatan/:id/exists",
+          url: urlBase + "/Jabatan/:id/exists",
           method: "GET"
         },
 
@@ -4408,7 +4408,7 @@ module.factory(
          * </em>
          */
         "findById": {
-          url: urlBase + "/jabatan/:id",
+          url: urlBase + "/Jabatan/:id",
           method: "GET"
         },
 
@@ -4445,7 +4445,7 @@ module.factory(
          * </em>
          */
         "replaceById": {
-          url: urlBase + "/jabatan/:id/replace",
+          url: urlBase + "/Jabatan/:id/replace",
           method: "POST"
         },
 
@@ -4479,7 +4479,7 @@ module.factory(
          */
         "find": {
           isArray: true,
-          url: urlBase + "/jabatan",
+          url: urlBase + "/Jabatan",
           method: "GET"
         },
 
@@ -4512,7 +4512,7 @@ module.factory(
          * </em>
          */
         "findOne": {
-          url: urlBase + "/jabatan/findOne",
+          url: urlBase + "/Jabatan/findOne",
           method: "GET"
         },
 
@@ -4546,7 +4546,7 @@ module.factory(
          * Information related to the outcome of the operation
          */
         "updateAll": {
-          url: urlBase + "/jabatan/update",
+          url: urlBase + "/Jabatan/update",
           method: "POST"
         },
 
@@ -4579,7 +4579,7 @@ module.factory(
          * </em>
          */
         "deleteById": {
-          url: urlBase + "/jabatan/:id",
+          url: urlBase + "/Jabatan/:id",
           method: "DELETE"
         },
 
@@ -4611,7 +4611,7 @@ module.factory(
          *  - `count` – `{number=}` - 
          */
         "count": {
-          url: urlBase + "/jabatan/count",
+          url: urlBase + "/Jabatan/count",
           method: "GET"
         },
 
@@ -4648,7 +4648,7 @@ module.factory(
          * </em>
          */
         "prototype$updateAttributes": {
-          url: urlBase + "/jabatan/:id",
+          url: urlBase + "/Jabatan/:id",
           method: "PUT"
         },
 
@@ -4685,66 +4685,66 @@ module.factory(
          *  - `changes` – `{ReadableStream=}` - 
          */
         "createChangeStream": {
-          url: urlBase + "/jabatan/change-stream",
+          url: urlBase + "/Jabatan/change-stream",
           method: "POST"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.findById() instead.
-        "::findById::organisasi::jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.findById() instead.
+        "::findById::Organisasi::Jabatan": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/organisasi/:id/jabatan/:fk",
+          url: urlBase + "/Organisasi/:id/Jabatan/:fk",
           method: "GET"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.destroyById() instead.
-        "::destroyById::organisasi::jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.destroyById() instead.
+        "::destroyById::Organisasi::Jabatan": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/organisasi/:id/jabatan/:fk",
+          url: urlBase + "/Organisasi/:id/Jabatan/:fk",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.updateById() instead.
-        "::updateById::organisasi::jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.updateById() instead.
+        "::updateById::Organisasi::Jabatan": {
           params: {
           'fk': '@fk'
           },
-          url: urlBase + "/organisasi/:id/jabatan/:fk",
+          url: urlBase + "/Organisasi/:id/Jabatan/:fk",
           method: "PUT"
         },
 
-        // INTERNAL. Use Organisasi.jabatan() instead.
-        "::get::organisasi::jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan() instead.
+        "::get::Organisasi::Jabatan": {
           isArray: true,
-          url: urlBase + "/organisasi/:id/jabatan",
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "GET"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.create() instead.
-        "::create::organisasi::jabatan": {
-          url: urlBase + "/organisasi/:id/jabatan",
+        // INTERNAL. Use Organisasi.Jabatan.create() instead.
+        "::create::Organisasi::Jabatan": {
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "POST"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.createMany() instead.
-        "::createMany::organisasi::jabatan": {
+        // INTERNAL. Use Organisasi.Jabatan.createMany() instead.
+        "::createMany::Organisasi::Jabatan": {
           isArray: true,
-          url: urlBase + "/organisasi/:id/jabatan",
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "POST"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.destroyAll() instead.
-        "::delete::organisasi::jabatan": {
-          url: urlBase + "/organisasi/:id/jabatan",
+        // INTERNAL. Use Organisasi.Jabatan.destroyAll() instead.
+        "::delete::Organisasi::Jabatan": {
+          url: urlBase + "/Organisasi/:id/Jabatan",
           method: "DELETE"
         },
 
-        // INTERNAL. Use Organisasi.jabatan.count() instead.
-        "::count::organisasi::jabatan": {
-          url: urlBase + "/organisasi/:id/jabatan/count",
+        // INTERNAL. Use Organisasi.Jabatan.count() instead.
+        "::count::Organisasi::Jabatan": {
+          url: urlBase + "/Organisasi/:id/Jabatan/count",
           method: "GET"
         },
       }

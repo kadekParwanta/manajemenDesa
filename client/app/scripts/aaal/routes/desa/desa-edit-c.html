@@ -21,6 +21,106 @@
           sf-model="vm.model"
           ng-submit="vm.createOrUpdate()"></form>
 
+    <table st-table="displayedCollection"
+           st-safe-src="vm.model.OrganisasiDesa"
+           class="table table-striped">
+        <thead>
+            <tr>
+                <th colspan="5">
+                    <p>Organisasi Desa</p>
+                </th>
+            </tr>
+            <tr>
+                <th st-sort="nama">nama</th>
+                <th st-sort="jabatan">jabatan</th>
+                <th st-sort="createdAt"
+                    ng-if="vm.createdAt">createdAt
+                </th>
+                <th st-sort="updatedAt"
+                    ng-if="vm.updatedAt">updatedAt
+                </th>
+                <th style="text-align: right">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in displayedCollection">
+                <td>{{row.nama}}</td>
+                <td>
+                    <div ng-repeat="jab in row.Jabatan">{{jab.nama}} : {{jab.pemegang}}<br></br></div>
+                </td>
+                <td ng-if="vm.createdAt">{{row.createdAt|date}}</td>
+                <td ng-if="vm.updatedAt">{{row.updatedAt|date}}</td>
+                <td style="text-align: right">
+                    <button type="button"
+                            ng-click="vm.removeItem(row)"
+                            class="btn btn-sm btn-danger">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                    <button type="button"
+                            ui-sref="private.DesaEdit({id:row.id})"
+                            class="btn btn-sm btn-info">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </button>
+                    <button type="button"
+                            ui-sref="private.DesaView({id:row.id})"
+                            class="btn btn-sm btn-default">
+                        <i class="glyphicon glyphicon-play"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table st-table="displayedCollectionMas"
+           st-safe-src="vm.model.OrganisasiMasyarakat"
+           class="table table-striped">
+        <thead>
+            <tr>
+                <th colspan="5">
+                    <p>Organisasi Masyarakat</p>
+                </th>
+            </tr>
+            <tr>
+                <th st-sort="nama">nama</th>
+                <th st-sort="jabatan">jabatan</th>
+                <th st-sort="createdAt"
+                    ng-if="vm.createdAt">createdAt
+                </th>
+                <th st-sort="updatedAt"
+                    ng-if="vm.updatedAt">updatedAt
+                </th>
+                <th style="text-align: right">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in displayedCollectionMas">
+                <td>{{row.nama}}</td>
+                <td>
+                    <div ng-repeat="jab in row.Jabatan">{{jab.nama}} : {{jab.pemegang}}<br></br></div>
+                </td>
+                <td ng-if="vm.createdAt">{{row.createdAt|date}}</td>
+                <td ng-if="vm.updatedAt">{{row.updatedAt|date}}</td>
+                <td style="text-align: right">
+                    <button type="button"
+                            ng-click="vm.removeItem(row)"
+                            class="btn btn-sm btn-danger">
+                        <i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                    <button type="button"
+                            ui-sref="private.DesaEdit({id:row.id})"
+                            class="btn btn-sm btn-info">
+                        <i class="glyphicon glyphicon-edit"></i>
+                    </button>
+                    <button type="button"
+                            ui-sref="private.DesaView({id:row.id})"
+                            class="btn btn-sm btn-default">
+                        <i class="glyphicon glyphicon-play"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
     <h3>Model Data</h3>
     <pre>{{vm.model | json}}</pre>
     <pre>{{vm.schema | json}}</pre>

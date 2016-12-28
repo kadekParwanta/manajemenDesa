@@ -31,7 +31,7 @@
 
         // load or create new instance
         if ($state.params.id) {
-            ModelService.findById({id: $state.params.id})
+            ModelService.findById({id: $state.params.id, filter: {include:[{'OrganisasiDesa':'Jabatan'},{'OrganisasiMasyarakat':'Jabatan'}]}})
                 .$promise
                 .then(function(model) {
                     vm.model = model;
