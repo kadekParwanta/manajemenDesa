@@ -1,38 +1,30 @@
-<div class="page-organisasi-edit">
-    <div>
-        <button type="button"
-                ui-sref="private.DesaList"
-                class="btn btn-default">
-            <i class="glyphicon glyphicon-backward"></i>
-            Back to overview
-        </button>
-        <button type="button"
-                ng-if="vm.model.id"
-                ui-sref="private.OrganisasiView({id:vm.model.id})"
-                class="btn btn-default">
-            <i class="glyphicon glyphicon-play"></i>
-            View
-        </button>
-    </div>
-
-    <h2>{{ vm.model.id && 'Edit '+vm.modelName+' #'+vm.model.id||'Create new ' +vm.modelName }} </h2>
-    <form sf-schema="vm.schema"
-          sf-form="vm.form"
-          sf-model="vm.model"
-          ng-submit="vm.createOrUpdate()"></form>
+<div class="page-jabatan-overview">
+    <button type="button"
+            ui-sref="private.JabatanEdit"
+            class="btn btn-success">
+        <i class="glyphicon glyphicon-plus">
+        </i> Add new item
+    </button>
 
     <table st-table="displayedCollection"
-           st-safe-src="vm.model.Jabatan"
+           st-safe-src="vm.rowCollection"
            class="table table-striped">
         <thead>
             <tr>
                 <th colspan="5">
-                    <p>Jabatan</p>
+                    <input st-search=""
+                           class="form-control"
+                           placeholder="Search ..."
+                           type="text"/>
                 </th>
             </tr>
             <tr>
-                <th st-sort="nama">Posisi</th>
-                <th st-sort="pemegang">Penjabat</th>
+                <th st-sort="id">id</th>
+                <th st-sort="jalan">jalan</th>
+                <th st-sort="jabatan">jabatan</th>
+                <th st-sort="kecamatan">kecamatan</th>
+                <th st-sort="kabupaten">kabupaten</th>
+                <th st-sort="provinsi">provinsi</th>
                 <th st-sort="createdAt"
                     ng-if="vm.createdAt">createdAt
                 </th>
@@ -44,13 +36,17 @@
         </thead>
         <tbody>
             <tr ng-repeat="row in displayedCollection">
-                <td>{{row.nama}}</td>
-                <td>{{row.pemegang}}</td>
+                <td>{{row.id}}</td>
+                <td>{{row.jalan}}</td>
+                <td>{{row.jabatan}}</td>
+                <td>{{row.kecamatan}}</td>
+                <td>{{row.kabupaten}}</td>
+                <td>{{row.provinsi}}</td>
                 <td ng-if="vm.createdAt">{{row.createdAt|date}}</td>
                 <td ng-if="vm.updatedAt">{{row.updatedAt|date}}</td>
                 <td style="text-align: right">
                     <button type="button"
-                            ng-click="vm.removeJabatan(row)"
+                            ng-click="vm.removeItem(row)"
                             class="btn btn-sm btn-danger">
                         <i class="glyphicon glyphicon-remove"></i>
                     </button>
@@ -68,9 +64,4 @@
             </tr>
         </tbody>
     </table>
-
-    <h3>Model Data</h3>
-    <pre>{{vm.model | json}}</pre>
-    <pre>{{vm.schema | json}}</pre>
-    <pre>{{vm.form | json}}</pre>
 </div>

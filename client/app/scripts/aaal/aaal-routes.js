@@ -94,6 +94,25 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/aaal/routes/organisasi/organisasi-view-c.html'
             })
+
+            .state(AAAL_BASE_STATE + 'JabatanList', {
+                url: '/jabatan/list',
+                controller: 'JabatanListCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/aaal/routes/jabatan/jabatan-list-c.html'
+            })
+            .state(AAAL_BASE_STATE + 'JabatanEdit', {
+                url: '/jabatan/edit/:id',
+                controller: 'JabatanEditCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/aaal/routes/jabatan/jabatan-edit-c.html'
+            })
+            .state(AAAL_BASE_STATE + 'JabatanView', {
+                url: '/jabatan/view/:id',
+                controller: 'JabatanViewCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/aaal/routes/jabatan/jabatan-view-c.html'
+            })
             /* STATES-NEEDLE - DO NOT REMOVE THIS */;
     }
 })();
