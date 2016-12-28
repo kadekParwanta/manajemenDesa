@@ -1,0 +1,39 @@
+{
+  "name": "RPJMDes",
+  "plural": "RPJMDes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "No": {
+      "type": "number"
+    },
+    "Bidang": {
+      "type": "string"
+    },
+    "SubBidang": {
+      "type": "string"
+    },
+    "Jenis": {
+      "type": "string"
+    },
+    "Lokasi": {
+      "type": "string"
+    },
+    "PrakiraanVolume": {
+      "type": "number"
+    },
+    "Sasaran": {
+      "type": "string"
+    },
+    "WaktuPelaksanaan": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

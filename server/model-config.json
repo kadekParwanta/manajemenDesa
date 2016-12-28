@@ -51,5 +51,9 @@
   "JadwalKegiatan": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "RPJMDes": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
