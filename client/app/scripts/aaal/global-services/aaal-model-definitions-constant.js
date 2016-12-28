@@ -43,6 +43,41 @@
                 ],
                 'mixins': [
                 ]
+            },
+            'Organisasi': {
+                'name': 'Organisasi',
+                'properties': {
+                    "nama": {
+                        "type": "string"
+                    }
+                },
+                'validations': [
+                ],
+                'relations': {
+                },
+                'acls': [
+                ],
+                'mixins': [
+                ]
+            },
+            'Jabatan': {
+                'name': 'Jabatan',
+                'properties': {
+                    "nama": {
+                        "type": "string"
+                    },
+                    "pemegang": {
+                        "type": "string"
+                    }
+                },
+                'validations': [
+                ],
+                'relations': {
+                },
+                'acls': [
+                ],
+                'mixins': [
+                ]
             }
         });
 })();

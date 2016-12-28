@@ -52,17 +52,17 @@
                 <td ng-if="vm.updatedAt">{{row.updatedAt|date}}</td>
                 <td style="text-align: right">
                     <button type="button"
-                            ng-click="vm.removeItem(row)"
+                            ng-click="vm.removeOrgDesa(row)"
                             class="btn btn-sm btn-danger">
                         <i class="glyphicon glyphicon-remove"></i>
                     </button>
                     <button type="button"
-                            ui-sref="private.DesaEdit({id:row.id})"
+                            ui-sref="private.OrganisasiEdit({id:row.id})"
                             class="btn btn-sm btn-info">
                         <i class="glyphicon glyphicon-edit"></i>
                     </button>
                     <button type="button"
-                            ui-sref="private.DesaView({id:row.id})"
+                            ui-sref="private..OrganisasiView({id:row.id})"
                             class="btn btn-sm btn-default">
                         <i class="glyphicon glyphicon-play"></i>
                     </button>
@@ -102,17 +102,17 @@
                 <td ng-if="vm.updatedAt">{{row.updatedAt|date}}</td>
                 <td style="text-align: right">
                     <button type="button"
-                            ng-click="vm.removeItem(row)"
+                            ng-click="vm.removeOrgMasy(row)"
                             class="btn btn-sm btn-danger">
                         <i class="glyphicon glyphicon-remove"></i>
                     </button>
                     <button type="button"
-                            ui-sref="private.DesaEdit({id:row.id})"
+                            ui-sref="private..OrganisasiEdit({id:row.id})"
                             class="btn btn-sm btn-info">
                         <i class="glyphicon glyphicon-edit"></i>
                     </button>
                     <button type="button"
-                            ui-sref="private.DesaView({id:row.id})"
+                            ui-sref="private..OrganisasiView({id:row.id})"
                             class="btn btn-sm btn-default">
                         <i class="glyphicon glyphicon-play"></i>
                     </button>

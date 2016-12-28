@@ -75,6 +75,25 @@
                 controllerAs: 'vm',
                 templateUrl: 'scripts/aaal/routes/desa/desa-view-c.html'
             })
+
+            .state(AAAL_BASE_STATE + 'OrganisasiList', {
+                url: '/organisasi/list',
+                controller: 'OrganisasiListCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/aaal/routes/organisasi/organisasi-list-c.html'
+            })
+            .state(AAAL_BASE_STATE + 'OrganisasiEdit', {
+                url: '/organisasi/edit/:id',
+                controller: 'OrganisasiEditCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/aaal/routes/organisasi/organisasi-edit-c.html'
+            })
+            .state(AAAL_BASE_STATE + 'OrganisasiView', {
+                url: '/organisasi/view/:id',
+                controller: 'OrganisasiViewCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'scripts/aaal/routes/organisasi/organisasi-view-c.html'
+            })
             /* STATES-NEEDLE - DO NOT REMOVE THIS */;
     }
 })();
