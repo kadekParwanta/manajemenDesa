@@ -14,22 +14,22 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "Desa": {
@@ -57,6 +57,14 @@
     "public": true
   },
   "APBDes": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Pendapatan": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Biaya": {
     "dataSource": "mongodb",
     "public": true
   }

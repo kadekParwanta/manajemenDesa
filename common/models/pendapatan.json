@@ -1,6 +1,6 @@
 {
-  "name": "JadwalKegiatan",
-  "plural": "JadwalKegiatan",
+  "name": "Pendapatan",
+  "plural": "Pendapatan",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,7 +10,7 @@
     "kode": {
       "type": "number"
     },
-    "uraian": {
+    "nama": {
       "type": "string"
     },
     "jumlah": {
@@ -18,21 +18,13 @@
     },
     "bulan": {
       "type": "date"
-    },
-    "tipe": {
-      "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "pendapatan": {
+    "details": {
       "type": "hasMany",
       "model": "Pendapatan",
-      "foreignKey": ""
-    },
-    "biaya": {
-      "type": "hasMany",
-      "model": "Biaya",
       "foreignKey": ""
     }
   },
