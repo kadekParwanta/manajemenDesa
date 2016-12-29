@@ -44,7 +44,7 @@
     "dataSource": "mongodb",
     "public": true
   },
-  "APBDes": {
+  "APBDesItem": {
     "dataSource": "mongodb",
     "public": true
   },
@@ -53,6 +53,10 @@
     "public": true
   },
   "RPJMDes": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "APBDes": {
     "dataSource": "mongodb",
     "public": true
   }

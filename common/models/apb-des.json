@@ -7,27 +7,23 @@
     "validateUpsert": true
   },
   "properties": {
-    "kode": {
-      "type": "number"
-    },
-    "uraian": {
-      "type": "string"
-    },
-    "satuan": {
-      "type": "string"
-    },
-    "harga": {
-      "type": "number"
-    },
-    "jumlah": {
-      "type": "number"
-    },
-    "keterangan": {
-      "type": "string"
+    "tahun": {
+      "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "items": {
+      "type": "hasMany",
+      "model": "APBDesItem",
+      "foreignKey": ""
+    },
+    "desa": {
+      "type": "belongsTo",
+      "model": "Desa",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
