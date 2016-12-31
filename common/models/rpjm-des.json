@@ -10,9 +10,6 @@
     "No": {
       "type": "number"
     },
-    "Bidang": {
-      "type": "string"
-    },
     "SubBidang": {
       "type": "string"
     },
@@ -28,12 +25,38 @@
     "Sasaran": {
       "type": "string"
     },
-    "WaktuPelaksanaan": {
-      "type": "string"
+    "Tahun": {
+      "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Bidang": {
+      "type": "belongsTo",
+      "model": "Bidang",
+      "foreignKey": ""
+    },
+    "WaktuPelaksanaan": {
+      "type": "hasAndBelongsToMany",
+      "model": "WaktuPelaksanaan",
+      "foreignKey": ""
+    },
+    "SumberBiaya": {
+      "type": "hasOne",
+      "model": "SumberBiaya",
+      "foreignKey": ""
+    },
+    "PolaPelaksanaan": {
+      "type": "hasAndBelongsToMany",
+      "model": "PolaPelaksanaan",
+      "foreignKey": ""
+    },
+    "Desa": {
+      "type": "belongsTo",
+      "model": "Desa",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

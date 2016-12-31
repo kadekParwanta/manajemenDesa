@@ -67,5 +67,21 @@
   "Biaya": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "Bidang": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "WaktuPelaksanaan": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "SumberBiaya": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "PolaPelaksanaan": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
